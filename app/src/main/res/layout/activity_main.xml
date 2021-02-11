@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<include layout="@layout/app_bar_container" />-->
+
+    <Switch
+        android:layout_marginTop="5dp"
+        android:id="@+id/switchUsingDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Using Device"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_mask_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_credit_card_info"
+        android:layout_marginBottom="@dimen/margin_tab_mask_options"
+        app:tabMaxWidth="100dp">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_format_option_last_four" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_format_option_first_last_four" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_format_option_mask_last_four" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_credit_card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_top_bottom_credit_info"
+        android:paddingLeft="@dimen/padding_left_right_credit_info"
+        android:paddingRight="@dimen/padding_left_right_credit_info"
+        android:paddingTop="@dimen/padding_top_bottom_credit_info">
+
+        <com.bolt.consumersdk.views.CCConsumerCreditCardNumberEditText
+            android:id="@+id/text_edit_credit_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="creditCardNumber"
+            android:hint="@string/enter_card_number" />
+        <com.bolt.consumersdk.views.CCConsumerExpirationDateEditText
+            android:id="@+id/text_edit_credit_card_expiration_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="creditCardExpirationDate"
+            android:hint="@string/mm_yy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.bolt.consumersdk.views.CCConsumerCvvEditText
+                android:id="@+id/text_edit_credit_card_cvv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="creditCardSecurityCode"
+                android:hint="@string/enter_cvv" />
+            <EditText
+                android:id="@+id/text_edit_credit_card_postal_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints="postalCode"
+                android:hint="@string/postal_code"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xx_large"
+            android:gravity="center"
+            android:text="@string/swiper_connection_status" />
+        <TextView
+            android:id="@+id/text_view_connection_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xx_large"
+            android:gravity="center"
+            android:text="@string/disconnected" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_generate_token"
+        style="?attr/materialButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_credit_card_info"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:width="@dimen/width_example_button"
+        android:background="@color/colorAccent"
+        android:onClick="generateToken"
+        android:paddingBottom="@dimen/padding_large"
+        android:paddingTop="@dimen/padding_large"
+        android:text="@string/generate_token"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

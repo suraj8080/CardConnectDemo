@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CardConnectDemo" parent="Theme.AppCompat.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--<item name="colorPrimaryVariant">@color/purple_200</item>
+        <item name="colorOnPrimary">@color/black</item>-->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <!--<item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ConsumerAppImplementer.Theme" parent="AppConsumerTheme.NoActionBar"/>
+
+    <style name="ConsumerAppImplementer.Translucent" parent="AppConsumerTheme.Translucent">
+        <!--<item name="confirmationActionButtonTextColor">@android:color/holo_red_dark</item>-->
+        <!--<item name="consumerActionButtonTextSize">@dimen/text_size_small</item>-->
+        <!--<item name="consumerFontRegular">@string/poppins_regular</item>-->
+        <!--<item name="consumerFontLight">@string/poppins_light</item>-->
+        <!--<item name="confirmationTitleTextColor">@android:color/darker_gray</item>-->
+        <!--<item name="confirmationDividerColor">@android:color/holo_orange_light</item>-->
+    </style>
+</resources>

@@ -1,0 +1,3 @@
+include ':boltsdk-release-3.0.74'
+include ':app'
+rootProject.name = "CardConnectDemo"

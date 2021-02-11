@@ -1,0 +1,31 @@
+<resources>
+    <dimen name="margin_tab_mask_options">20dp</dimen>
+    <dimen name="padding_left_right_credit_info">20dp</dimen>
+    <dimen name="padding_top_bottom_credit_info">10dp</dimen>
+    <dimen name="width_example_button">270dp</dimen>
+
+    <!--Generic Padding-->
+    <dimen name="padding_xx_small">3dp</dimen>
+    <dimen name="padding_x_small">5dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="padding_medium_two">12dp</dimen>
+    <dimen name="padding_large">15dp</dimen>
+    <dimen name="padding_x_large">18dp</dimen>
+    <dimen name="padding_xx_large">20dp</dimen>
+    <dimen name="no_padding">0dp</dimen>
+
+    <!--Generic Margin-->
+    <dimen name="margin_x_small">5dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_medium_two">13dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+    <dimen name="margin_x_large">18dp</dimen>
+    <dimen name="margin_xx_large">20dp</dimen>
+    <dimen name="margin_xxx_large">25dp</dimen>
+    <dimen name="margin_4x_large">50dp</dimen>
+    <dimen name="no_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+</resources>
